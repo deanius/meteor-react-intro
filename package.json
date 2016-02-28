@@ -4,6 +4,7 @@
   "description": "",
   "main": "meteor-chess-13.js",
   "scripts": {
+    "start": "meteor --port 3120",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

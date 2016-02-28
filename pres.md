@@ -1,5 +1,7 @@
 Build a Realtime Game over WebSockets
 
+10 minute version (target 750 written words (1500 spoken), 10 slides/20 states)
+
 Prereqs
 - Chessboard.js
   - jQuery dependency
@@ -13,9 +15,13 @@ Prereqs
 Starter JSBin
   http://jsbin.com/hipile/1
 
-Static+Firebase
+Static+Firebase (Vanilla)
   demo
   http://jsbin.com/hipile/2
+
+Static+Firebase (React)
+  demo
+  http://jsbin.com/hipile/3
 
 Hosted Meteor/Mongo
   https://chessboardjs.meteor.com
@@ -37,3 +43,15 @@ Hosted Meteor
 Reactive Programming
   - Similar model as React (RxJS, Bacon, etc..)
   - "The latest record in my local cache"
+
+-----------
+
+Elaboration Possibilities
+
+Optimistic UI
+  - Use Meteor Methods to do Optimistic UI (cancel if: opponent already made move? King actually taken?)
+
+Vs. RxJS
+  - Declare a variable to represent a changing value (Rx.Subject)
+  - Require certain 'Reactive contexts' like helpers to 'run your function again'
+  -

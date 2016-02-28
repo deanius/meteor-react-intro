@@ -19,6 +19,7 @@ modules
 react-template-helper
 react
 
+reactive-var
 deanius:at-at
 standard-minifier-css
 standard-minifier-js

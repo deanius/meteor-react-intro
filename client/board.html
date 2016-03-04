@@ -1,15 +1,5 @@
-<head>
-  <title>Arrr</title>
-</head>
-
-<body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> board }}
-</body>
-
 <template name="board">
   <div id="board">
-  {{> React component=ChessBoard board=boardData}}
+  {{> React component=ReactChessBoard board=boardData}}
   </div>
 </template>

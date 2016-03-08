@@ -18,6 +18,17 @@ export default React.createClass({
       }
     })
   },
+  componentDidUpdate() {
+    let currentBoard = this.props.board;
+    // be naughty and mutate the DOM after React
+    ChessBoard(containerId, {
+      draggable: true,
+      position: currentBoard,
+      onDrop: function(source, target) {
+        addBoard.call(movePiece(currentBoard, source, target))
+      }
+    })
+  },
   render() {
     return (
       <div id={containerId}></div>

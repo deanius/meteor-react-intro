@@ -1,5 +1,6 @@
 import React from 'react'
 import {movePiece} from '../../lib/chess.js'
+import {addBoard} from '../../lib/pubsub.js'
 
 // depends on jQuery, can only be used on client
 import ChessBoard from 'chessboardjs'
@@ -13,7 +14,7 @@ export default React.createClass({
       draggable: true,
       position: currentBoard,
       onDrop: function(source, target) {
-        Meteor.call('addBoard', movePiece(currentBoard, source, target))
+        addBoard.call(movePiece(currentBoard, source, target))
       }
     })
   },

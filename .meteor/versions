@@ -37,6 +37,7 @@ jsx@0.2.4
 launch-screen@1.0.6-beta.11
 livedata@1.0.15
 logging@1.0.9-beta.11
+mdg:validated-method@1.0.1
 meteor@1.1.11-beta.11
 meteor-base@1.0.1
 meteor-env-dev@0.0.1-beta.11

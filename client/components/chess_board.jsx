@@ -13,9 +13,7 @@ export default React.createClass({
       draggable: true,
       position: currentBoard,
       onDrop: function(source, target) {
-        let newBoard = movePiece(currentBoard, source, target)
-        // optimistically update the local collection, let Meteor sync it
-        Boards.insert(newBoard)
+        Meteor.call('addBoard', movePiece(currentBoard, source, target))
       }
     })
   },
